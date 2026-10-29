@@ -16,5 +16,6 @@ analysis, automatic calendar-provider refresh, scheduled execution, or cross-pla
 CI configuration covers Python 3.11–3.13 but has not run remotely.
 
 Tests establish software behavior on synthetic data, not investment outcomes or source truth.
-GitHub CLI authentication returned HTTP 401, so no remote repository or public release
-has been created by this delivery.
+Initial GitHub CLI authentication returned HTTP 401. The owner renewed authentication
+on 2026-10-30 (Asia/Shanghai); publication proceeds under the owner's ArielTissue account.
+Remote workflow results are tracked in GitHub Actions separately from these local checks.

@@ -53,7 +53,9 @@ all modules run unattended.
 Python **3.11+**. No third-party runtime dependencies are required by the core.
 
 ```bash
-# After cloning this repository:
+# Clone and install:
+git clone https://github.com/ArielTissue/Argo.git
+cd Argo
 python3 -m venv .venv
 source .venv/bin/activate      # Windows PowerShell: .venv\Scripts\Activate.ps1
 python -m pip install .
