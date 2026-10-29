@@ -12,10 +12,11 @@
   candidate-specific theme-freeze behavior was corrected and covered by tests.
 
 Not verified: live IBKR transport/authentication, host-plugin installation UI, live LLM
-analysis, automatic calendar-provider refresh, scheduled execution, or cross-platform CI.
-CI configuration covers Python 3.11–3.13 but has not run remotely.
+analysis, automatic calendar-provider refresh, scheduled execution, or Windows execution.
+Remote GitHub Actions passed on Ubuntu with Python 3.11, 3.12 and 3.13:
+[verified run](https://github.com/ArielTissue/Argo/actions/runs/40908593448).
 
 Tests establish software behavior on synthetic data, not investment outcomes or source truth.
 Initial GitHub CLI authentication returned HTTP 401. The owner renewed authentication
-on 2026-10-30 (Asia/Shanghai); publication proceeds under the owner's ArielTissue account.
-Remote workflow results are tracked in GitHub Actions separately from these local checks.
+on 2026-10-30 (Asia/Shanghai). The public repository is
+https://github.com/ArielTissue/Argo, with main tracking the published source.

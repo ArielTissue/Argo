@@ -1,5 +1,7 @@
 # Argo
 
+[![Tests](https://github.com/ArielTissue/Argo/actions/workflows/tests.yml/badge.svg)](https://github.com/ArielTissue/Argo/actions/workflows/tests.yml)
+
 ### Knowledge-grounded, portfolio-aware investment analysis
 
 Argo connects a reusable knowledge library, company evidence and a user's own portfolio
