@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "argo",
+  "version": "0.1.0",
+  "description": "Knowledge-grounded, portfolio-aware investment analysis with staged local outputs"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "currency": "USD",
+  "max_snapshot_age_hours": 72,
+  "single_stock_max": 0.15,
+  "minimum_margin_of_safety": 0.20,
+  "role_ranges": {"core": [0.50, 0.80], "satellite": [0.10, 0.40], "cash": [0.00, 0.20]},
+  "theme_limits": {"technology": 0.35},
+  "frozen_themes": ["technology"]
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argo-invest-research"
+version = "0.1.0"
+description = "Knowledge-grounded, portfolio-aware investment analysis with a local execution harness"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Argo contributors"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+argo = "argo.cli:main"
+
+[tool.setuptools]
+packages = ["argo", "argo_examples"]
+package-dir = {argo = "src/argo", argo_examples = "examples"}
+
+[tool.setuptools.package-data]
+argo_examples = ["*.json", "knowledge/*.md"]

@@ -1,0 +1,14 @@
+{
+  "run_id": "replace-with-prepared-run-id",
+  "symbol": "AURX",
+  "event_id": "AURX-FY2026-Q3",
+  "evidence": [{"id": "S1", "url": "https://example.org/aurx/q3", "kind": "official_ir", "published_at": "2026-10-29T08:00:00Z", "accessed_at": "2026-10-29T11:30:00Z", "excerpt": "Synthetic fixture: revenue grew 8%; operating cash flow was 120 units. This is not an actual company disclosure."}],
+  "claims": [{"text": "The fictional company's revenue grew 8% in the sample quarter.", "evidence_ids": ["S1"]}],
+  "analysis": {
+    "business_quality": "Apply [[cash-flow-quality]] to investigate whether cash conversion supports the revenue trend. This fixture does not establish a durable competitive advantage.",
+    "bear_case": "The illustrative valuation may overestimate sustainable cash generation; a weaker renewal cycle would undermine the scenario."
+  },
+  "valuation": {"price": 80, "intrinsic_value": 120, "currency": "USD", "price_as_of": "2026-10-29T11:45:00Z", "assumptions": ["120 is a fictional scenario input, not a market fact or a validated fair value.", "Apply [[margin-of-safety]] only after independently reviewing growth and discount-rate assumptions."]},
+  "decision": {"stance": "wait", "position_purpose": "long_term", "rationale": "The valuation scenario clears the illustrative margin threshold, but the portfolio exceeds its stock/theme limits and technology additions are frozen.", "policy_refs": ["P-SINGLE-STOCK", "P-THEME", "P-FROZEN", "P-MARGIN"], "exit_conditions": ["Reassess if the cash-generation thesis deteriorates.", "Revisit a potential addition only after portfolio constraints are resolved and current sources are checked."]},
+  "limitations": ["All companies, amounts, sources and policy thresholds in this replay are synthetic.", "Source URLs are example.org placeholders; no live research, broker access or LLM call occurs.", "The validator checks references and arithmetic, not the truth of the excerpt or valuation assumptions."]
+}

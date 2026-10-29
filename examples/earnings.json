@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "events": [
+    {"id": "AURX-FY2026-Q3", "symbol": "AURX", "period": "FY2026 Q3", "expected_at": "2026-10-29T08:00:00Z", "released_at": "2026-10-29T08:00:00Z", "source_url": "https://example.org/aurx/q3", "source_kind": "official_ir", "verified_at": "2026-10-29T11:00:00Z"},
+    {"id": "HARB-FY2026-Q3", "symbol": "HARB", "period": "FY2026 Q3", "expected_at": "2026-10-29T20:00:00Z", "released_at": null, "source_url": "https://example.org/harb/q3-date", "source_kind": "official_ir", "verified_at": "2026-10-29T11:00:00Z"}
+  ]
+}

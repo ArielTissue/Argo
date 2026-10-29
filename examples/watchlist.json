@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "timezone": "Asia/Shanghai",
+  "symbols": [
+    {"symbol": "AURX", "company": "Aurora Example Systems (fictional)", "ir_url": "https://example.org/aurx/investors", "enabled": true},
+    {"symbol": "HARB", "company": "Harbor Example Industries (fictional)", "ir_url": "https://example.org/harb/investors", "enabled": true}
+  ]
+}

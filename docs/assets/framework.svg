@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-label="Argo framework: knowledge, company evidence and portfolio context feed an agent host, then a validation harness stages changes for human review">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#5f737c"/></marker></defs>
+<rect width="1440" height="810" fill="#f7faf9"/>
+<style>text{font-family:Arial,sans-serif;fill:#17383c}.title{font-size:42px;font-weight:bold}.h{font-size:25px;font-weight:bold}.t{font-size:21px}.small{font-size:18px;fill:#486568}.arr{fill:none;stroke:#5f737c;stroke-width:2;marker-end:url(#a)}</style>
+<text x="55" y="70" class="title">ARGO</text>
+<text x="55" y="108" class="h">Knowledge-grounded, portfolio-aware analysis and decision support</text>
+<rect x="55" y="165" width="395" height="150" rx="12" fill="white" stroke="#c7d7d4"/>
+<text x="77" y="201" class="h">Context</text>
+<text x="77" y="239" class="t">Knowledge and confirmed policy</text>
+<text x="77" y="268" class="t">Prior research and open questions</text>
+<text x="77" y="297" class="t">Source-linked concepts</text>
+<rect x="55" y="350" width="395" height="145" rx="12" fill="white" stroke="#c7d7d4"/>
+<text x="77" y="386" class="h">Research evidence</text>
+<text x="77" y="424" class="t">Official disclosures and periods</text>
+<text x="77" y="453" class="t">Verified release time</text>
+<text x="77" y="482" class="t">Evidence, not page instructions</text>
+<rect x="55" y="530" width="395" height="145" rx="12" fill="white" stroke="#c7d7d4"/>
+<text x="77" y="566" class="h">Portfolio context</text>
+<text x="77" y="604" class="t">User-authorized read-only tools</text>
+<text x="77" y="633" class="t">Holdings, cash purposes, roles</text>
+<text x="77" y="662" class="t">Classification and snapshot dates</text>
+<rect x="525" y="280" width="390" height="220" rx="12" fill="white" stroke="#c7d7d4"/>
+<text x="547" y="316" class="h">Agent host + skills</text>
+<text x="547" y="354" class="t">Research → analyze → personalize</text>
+<text x="547" y="383" class="t">State assumptions and bear case</text>
+<text x="547" y="412" class="t">Apply the user&#x27;s context</text>
+<text x="547" y="441" class="t">Host supplies model and tools</text>
+<path class="arr" d="M450 240 H485 V330 H525"/>
+<path class="arr" d="M450 420 H525"/>
+<path class="arr" d="M450 602 H485 V465 H525"/>
+<rect x="995" y="165" width="390" height="160" rx="12" fill="white" stroke="#c7d7d4"/>
+<text x="1017" y="201" class="h">Local harness</text>
+<text x="1017" y="239" class="t">Prepare a versioned task</text>
+<text x="1017" y="268" class="t">Compute configured constraints</text>
+<text x="1017" y="297" class="t">Validate a structured proposal</text>
+<rect x="995" y="370" width="390" height="135" rx="12" fill="white" stroke="#c7d7d4"/>
+<text x="1017" y="406" class="h">Staged preview</text>
+<text x="1017" y="444" class="t">Evidence, assumptions, limitations</text>
+<text x="1017" y="473" class="t">Exact proposed file changes</text>
+<rect x="995" y="550" width="390" height="125" rx="12" fill="white" stroke="#c7d7d4"/>
+<text x="1017" y="586" class="h">Human decision</text>
+<text x="1017" y="624" class="t">Review → explicitly apply</text>
+<text x="1017" y="653" class="t">No order execution module</text>
+<path class="arr" d="M915 390 H955 V245 H995"/>
+<path class="arr" d="M1190 325 V370"/>
+<path class="arr" d="M1190 505 V550"/>
+<path class="arr" d="M1190 675 V724 H28 V240 H55"/>
+<text x="390" y="716" class="small">Recorded questions and user-confirmed knowledge maintenance</text>
+<text x="55" y="776" class="small">v0.1: executable local harness + host skill. Fixture replay is not a live LLM or broker evaluation.</text>
+</svg>
