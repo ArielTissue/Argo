@@ -1,4 +1,4 @@
-# Local verification — 2026-10-29
+# Local verification — 2026-10-29–30 (Asia/Shanghai)
 
 - Python 3.11.7 on macOS arm64: 21 workflow behavior tests passed.
 - Editable installation: passed.
