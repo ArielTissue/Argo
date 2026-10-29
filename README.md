@@ -4,15 +4,12 @@
 
 ### Knowledge-grounded, portfolio-aware investment analysis
 
-I built Argo after noticing a pattern in my own investing: I would buy or sell on
-intuition, then hope the price moved in my favor. I wanted to make the reasoning
-explicit **before** acting: why this company, what assumptions support the valuation,
-what role does the position serve, and when should I reassess?
+Argo connects a reusable knowledge library, company evidence and a user's own portfolio
+context to support deliberate investment decisions. It makes the reasoning before a
+decision explicit: **why this company, why this valuation, why this position, and when
+to reassess?**
 
-Argo combines a source-backed knowledge library, company evidence and personal
-portfolio context. **The same earnings report can lead to different action suggestions
-for different portfolios.** Its purpose is to support a decision the user can explain
-and revisit; better investment performance has not been established.
+The same earnings report can lead to different suggestions for different portfolios.
 
 > **Research and learning software, not investment advice. All bundled demo companies,
 > portfolios and policies are fictional.**
