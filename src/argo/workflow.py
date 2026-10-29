@@ -262,6 +262,40 @@ def _cell(value):
     return str(value).replace("|", "\\|").replace("\n", " ").replace("\r", " ")
 
 
+def _portfolio_lines(context, policy):
+    lines = [f"Data status: {context['status']}."]
+    if "role_weights" not in context:
+        lines.append("Portfolio unavailable; allocation percentages cannot be computed.")
+    else:
+        currency = context["currency"]
+        lines += [f"Snapshot: {context['snapshot_as_of']}. Currency: {currency}.",
+                  f"Account value: {context['account_value']:,.2f} {currency}; "
+                  f"investable value: {context['investable_value']:,.2f} {currency}.",
+                  f"Reserved cash excluded from allocation weights: "
+                  f"{context['reserved_cash_excluded']:,.2f} {currency}.", "",
+                  "| Exposure | Weight | Policy | Status |", "|---|---:|---|---|"]
+        for role, weight in context["role_weights"].items():
+            lo, hi = policy["role_ranges"][role]
+            status = "Within band" if lo <= weight <= hi else "Outside band"
+            lines.append(f"| {_cell(role.title())} | {weight:.1%} | {lo:.1%}–{hi:.1%} | {status} |")
+        for theme, weight in sorted(context["theme_weights"].items()):
+            limit = policy["theme_limits"].get(theme)
+            threshold = f"At most {limit:.1%}" if limit is not None else "Not configured"
+            if context["status"] != "ready":
+                status = "Stale / incomplete context"
+            else:
+                status = "Over limit" if limit is not None and weight > limit else (
+                    "Within limit" if limit is not None else "Not assessed")
+            lines.append(f"| {_cell(theme.title())} theme | {weight:.1%} | {threshold} | {status} |")
+        lines += ["", "Weights are rounded for display; checks use full precision."]
+    lines += ["", "### Policy findings"]
+    if context["findings"]:
+        lines += [f"- **{finding['rule_id']}** — {finding['message']}" for finding in context["findings"]]
+    else:
+        lines.append("No configured portfolio-policy findings.")
+    return lines
+
+
 def _render(proposal, task, result):
     valuation, decision = proposal["valuation"], proposal["decision"]
     lines = [f"# {proposal['symbol']} — {task['event']['period']}", "",
@@ -278,8 +312,9 @@ def _render(proposal, task, result):
                   f"Computed margin of safety: {result['margin_of_safety']:.2%}.",
                   "The intrinsic value is a model/user assumption, not a verified financial fact."]
         lines += [f"- {a}" for a in valuation["assumptions"]]
-    lines += ["", "## Portfolio context", "```json", json_text(task["portfolio"]).strip(), "```",
-              "", "## Decision support", f"**{decision['stance']}** — {decision['rationale']}",
+    lines += ["", "## Portfolio context"]
+    lines += _portfolio_lines(task["portfolio"], task["policy"])
+    lines += ["", "## Decision support", f"**{decision['stance']}** — {decision['rationale']}",
               f"Position purpose: {decision['position_purpose']}; policy references: {', '.join(decision['policy_refs'])}.",
               "", "### Exit / reassessment conditions"]
     lines += [f"- {x}" for x in decision["exit_conditions"]]

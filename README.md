@@ -4,15 +4,45 @@
 
 ### Knowledge-grounded, portfolio-aware investment analysis
 
-Argo connects a reusable knowledge library, company evidence and a user's own portfolio
-context to support deliberate investment decisions. It makes the reasoning before a
-decision explicit: **why this company, why this valuation, why this position, and when
-to reassess?**
+I built Argo after noticing a pattern in my own investing: I would buy or sell on
+intuition, then hope the price moved in my favor. I wanted to make the reasoning
+explicit **before** acting: why this company, what assumptions support the valuation,
+what role does the position serve, and when should I reassess?
+
+Argo combines a source-backed knowledge library, company evidence and personal
+portfolio context. **The same earnings report can lead to different action suggestions
+for different portfolios.** Its purpose is to support a decision the user can explain
+and revisit; better investment performance has not been established.
+
+> **Research and learning software, not investment advice. All bundled demo companies,
+> portfolios and policies are fictional.**
 
 [中文说明](README.zh-CN.md) · [Architecture](docs/architecture.md) · [Quick start](#quick-start) ·
 [Connect your account](docs/account-connection.md) · [Evaluation](docs/evaluation.md)
 
+## A fictional example: attractive valuation, constrained portfolio
+
+The demo assumes a price of **80** and an intrinsic value of **120**, giving a
+**33.3% margin of safety**. The portfolio context changes the action suggestion:
+
+| Check | Demo result | Configured policy | Rule |
+|---|---|---|---|
+| Margin of safety | 33.3% | At least 20% — passes | `P-MARGIN` |
+| AURX position | 21.1% | At most 15% — over limit | `P-SINGLE-STOCK` |
+| Technology exposure | 40.0% | At most 35% — over limit | `P-THEME` |
+| Technology additions | Frozen | No additions to this theme | `P-FROZEN` |
+
+> **WAIT** — The assumed valuation clears the margin threshold, but portfolio
+> limits and the theme freeze block an addition. Review the assumptions and resolve
+> the constraints before reassessing.
+
+This is a synthetic fixture replay of the actual harness, not a live LLM result or
+an estimate of investment performance. Intrinsic value remains an assumption.
+
 ![Argo framework](docs/assets/framework.svg)
+
+*Knowledge, company evidence and portfolio context feed the host's analysis; the local
+harness validates and stages the result for human review and archival.*
 
 ## The framework
 

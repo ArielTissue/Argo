@@ -17,6 +17,3 @@ Remote GitHub Actions passed on Ubuntu with Python 3.11, 3.12 and 3.13:
 [verified run](https://github.com/ArielTissue/Argo/actions/runs/40908593448).
 
 Tests establish software behavior on synthetic data, not investment outcomes or source truth.
-Initial GitHub CLI authentication returned HTTP 401. The owner renewed authentication
-on 2026-10-30 (Asia/Shanghai). The public repository is
-https://github.com/ArielTissue/Argo, with main tracking the published source.
