@@ -165,6 +165,7 @@ execution path. See [account connection](docs/account-connection.md).
 ## Evaluation and limitations
 
 ```bash
+python -m pip install -e .
 python -m unittest discover -s tests -v
 ```
 
