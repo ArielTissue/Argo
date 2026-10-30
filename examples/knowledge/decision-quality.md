@@ -4,6 +4,13 @@ Review information available at the time, stated assumptions, counterarguments, 
 
 Related: [[second-level-thinking]] · [[sell-triggers]]
 
+## Dated review worksheet
+
+1. Preserve the original thesis, alternatives, constraints and known uncertainty.
+2. Review whether the process used the available information reasonably before scoring the result.
+3. Identify surprises, rule breaches and evidence-driven revisions separately.
+4. Choose one process improvement with an observable check; do not retrofit a rule solely to celebrate a winning trade.
+
 ## Provenance
 
 Adapted concept: 运气与决策质量. Source orientation: Howard Marks; editorial synthesis. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.

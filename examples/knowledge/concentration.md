@@ -4,6 +4,13 @@ Count exposures rather than ticker symbols alone. Examine single issuers, indust
 
 Related: [[risk-and-permanent-loss]] · [[position-review]]
 
+## Exposure worksheet
+
+1. Record snapshot time, currency, investable denominator and reserved funds.
+2. Calculate issuer weights and mapped sector/theme exposure; show fund look-through sources and overlaps.
+3. Keep unmapped exposure explicit instead of distributing it across known themes.
+4. Compare with confirmed policy, then label any proposed post-change calculation as hypothetical.
+
 ## Provenance
 
 Adapted concept: 集中度. Source orientation: Philip Fisher; Peter Lynch; Howard Marks; editorial synthesis. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.

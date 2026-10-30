@@ -4,6 +4,13 @@ Input: current research, price timestamp, valuation range, user policy and portf
 
 Related: [[price-and-value]] · [[margin-of-safety]] · [[position-review]] · [[sell-triggers]]
 
+## Decision-support template
+
+1. Position purpose and proposed funding source, kept separate from order instructions.
+2. Dated price, conservative value range and margin under adverse assumptions.
+3. Current portfolio constraints and any explicitly hypothetical post-change exposure.
+4. Reasons to wait, invalidation conditions and next review date. The user decides; archive confirmation only commits documents.
+
 ## Provenance
 
 Adapted concept: 买入. Source orientation: Editorial workflow synthesis of Dorsey, Fisher and Lynch. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.

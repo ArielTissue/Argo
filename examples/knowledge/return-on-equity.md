@@ -4,6 +4,13 @@ ROE relates net income to average common equity. Decompose it into profit margin
 
 Related: [[return-on-invested-capital]] · [[quick-quality-screen]]
 
+## Decomposition worksheet
+
+1. Collect net income, revenue, average assets and average common equity for matching periods.
+2. Compute margin, turnover and leverage; reconcile their product with ROE.
+3. Explain debt changes, repurchases, exceptional gains and very small equity denominators.
+4. Record whether improvement reflects operations, financing or accounting structure before drawing a moat conclusion.
+
 ## Provenance
 
 Adapted concept: 净资产收益率. Source orientation: Pat Dorsey, The Five Rules for Successful Stock Investing. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.

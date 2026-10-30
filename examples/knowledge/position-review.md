@@ -4,6 +4,13 @@ Input: timestamped positions, currency, cash purposes, policy and explicit expos
 
 Related: [[concentration]] · [[risk-and-permanent-loss]] · [[buy-review]]
 
+## Portfolio-fit template
+
+1. Snapshot time, currency and investable denominator with reserved funds excluded as configured.
+2. Issuer, fund and theme exposures, classification sources and unmapped amounts.
+3. Policy comparisons with exact IDs and separately stated user judgment.
+4. Hypothetical changes only when separately calculated; report missing information and do not infer trading capacity from an absent account.
+
 ## Provenance
 
 Adapted concept: 仓位. Source orientation: Editorial workflow synthesis of Fisher, Lynch and Marks. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.

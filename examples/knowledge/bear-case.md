@@ -4,6 +4,13 @@ Describe a causal path by which the investment thesis fails, not a generic list 
 
 Related: [[moat]] · [[risk-and-permanent-loss]] · [[sell-triggers]]
 
+## Monitoring worksheet
+
+1. State the failure mechanism, affected cash-flow assumption and potentially vulnerable counterparty.
+2. Name a source and observation schedule for each material signal.
+3. Write a temporary-adversity interpretation and a thesis-break interpretation.
+4. Record the evidence needed to distinguish them; do not equate every unfavorable headline with invalidation.
+
 ## Provenance
 
 Adapted concept: 空头情形. Source orientation: Pat Dorsey, The Five Rules for Successful Stock Investing, chapter 6. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.

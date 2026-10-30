@@ -4,6 +4,13 @@ A low multiple can reflect peak-cycle earnings, structural decline, heavy reinve
 
 Related: [[free-cash-flow]] · [[sbc-adjusted-cash-flow]] · [[margin-of-safety]]
 
+## Cheapness audit
+
+1. Name the comparison basis: normalized cash flow, earnings, assets or peers.
+2. Recalculate under a weaker business environment without automatic mean reversion.
+3. List debt, preferred claims, dilution and reinvestment needs before common equity.
+4. Record why value could be realized and what evidence would invalidate that explanation.
+
 ## Provenance
 
 Adapted concept: 价值陷阱. Source orientation: Dorsey; Peter Lynch; Marks. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.

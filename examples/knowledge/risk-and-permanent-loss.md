@@ -4,6 +4,13 @@ Consider irreversible impairment, dilution, leverage and forced selling as well 
 
 Related: [[concentration]] · [[decision-quality]] · [[bear-case]]
 
+## Loss-path worksheet
+
+1. List the business, financing and investor-liquidity mechanisms that could force a permanent loss.
+2. For each mechanism, state an early signal, available source and response that remains feasible.
+3. Check leverage, cash obligations and correlated exposures together.
+4. Record what cannot be quantified; do not invent a precise probability from a qualitative concern.
+
 ## Provenance
 
 Adapted concept: 风险不是波动. Source orientation: Howard Marks, The Most Important Thing. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.

@@ -4,6 +4,13 @@ Input: verified release, reporting period, original statements and notes, prior 
 
 Related: [[free-cash-flow]] · [[sbc-adjusted-cash-flow]] · [[moat]] · [[bear-case]] · [[buy-review]]
 
+## Report template
+
+1. Release verification, reporting period, units and source locations.
+2. Revenue/earnings comparison with reconciled periods; label unavailable prior data.
+3. Cash bridge, capital needs, dilution and debt-note changes.
+4. Thesis update, bear case, valuation assumptions and unresolved questions with next review date.
+
 ## Provenance
 
 Adapted concept: 财报阅读. Source orientation: Editorial workflow synthesis; Dorsey’s financial-analysis framework. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.

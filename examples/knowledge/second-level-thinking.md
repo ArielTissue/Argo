@@ -4,6 +4,13 @@ Ask what the market already expects, where the analysis differs, and why the evi
 
 Related: [[price-and-value]] · [[bear-case]] · [[decision-quality]]
 
+## Disagreement worksheet
+
+1. Write a concrete consensus assumption and state how it was observed; if consensus is unavailable, label it an inference.
+2. State one alternative assumption and the evidence supporting it.
+3. Describe outcomes if either assumption is wrong, including opportunity cost.
+4. Reject an unsupported contrarian story even when it sounds original.
+
 ## Provenance
 
 Adapted concept: 第二层次思维. Source orientation: Howard Marks, The Most Important Thing. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.
