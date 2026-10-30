@@ -1,10 +1,9 @@
 # Margin of safety
 
-An original teaching note for the synthetic demo, not a user's investment policy.
+Estimate a conservative value range before comparing it with price. For positive assumed value V and price P, Argo computes (V-P)/V. Code verifies that arithmetic, not the choice of V. Stress growth, reinvestment, discount rates and terminal assumptions; a wide valuation range may justify waiting rather than manufacturing precision. A cheaper price cannot repair a permanently impaired business. The required margin belongs to the user’s confirmed policy, not to a universal threshold. Explain which adverse scenario the discount can absorb and which it cannot.
 
-Given a positive assumed intrinsic value V and a price P, this project computes
-(V - P) / V. The arithmetic is deterministic. Choosing V requires judgment:
-assumptions, method and uncertainty must be stated. A low observed price alone
-is not evidence of undervaluation.
+Related: [[price-and-value]] · [[value-traps]] · [[bear-case]]
 
-Related: [[cash-flow-quality]]. A target margin is configured in policy.json.
+## Provenance
+
+Adapted concept: 安全边际. Source orientation: Dorsey; Marks. Original English paraphrase and editorial synthesis; not a quotation or a chapter reproduction. Source scope and reading pointers are documented in the repository’s docs/knowledge.md.

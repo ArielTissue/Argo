@@ -27,9 +27,9 @@ def init_workspace(path):
     resources = files("argo_examples")
     for name in INPUTS:
         atomic_write(root / name, resources.joinpath(name).read_text(encoding="utf-8"))
-    for name in ("margin-of-safety.md", "cash-flow-quality.md"):
-        atomic_write(root / "knowledge" / name,
-                     resources.joinpath("knowledge", name).read_text(encoding="utf-8"))
+    for note in sorted(resources.joinpath("knowledge").iterdir(), key=lambda p: p.name):
+        if note.name.endswith(".md"):
+            atomic_write(root / "knowledge" / note.name, note.read_text(encoding="utf-8"))
     atomic_write(root / ".gitignore", "*\n!.gitignore\n")
     return root
 

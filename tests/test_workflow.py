@@ -22,6 +22,20 @@ class WorkflowTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = init_workspace(Path(self.temp.name) / "user-workspace")
 
+    def test_default_knowledge_is_installed_linked_and_in_task_context(self):
+        import re
+        notes = {p.stem: p.read_text() for p in (self.root / "knowledge").glob("*.md")}
+        self.assertEqual(len(notes), 22)  # 20 curated + index + compatibility
+        self.assertIn("investment-framework", notes)
+        for text in notes.values():
+            for link in re.findall(r"\[\[([^]\n]+)\]\]", text):
+                self.assertIn(link, notes)
+        task = prepare(self.root, "AURX", NOW)
+        self.assertEqual(set(task["knowledge_names"]), set(notes))
+        context = (self.root / "runs" / task["run_id"] / "context.md").read_text()
+        self.assertIn("SBC-adjusted cash flow", context)
+        self.assertIn("Workflow: review portfolio fit", context)
+
     def task_and_proposal(self):
         task = prepare(self.root, "AURX", NOW)
         proposal = json.loads(files("argo_examples").joinpath("proposal.json").read_text())

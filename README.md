@@ -17,6 +17,16 @@ The same earnings report can lead to different suggestions for different portfol
 [中文说明](README.zh-CN.md) · [Architecture](docs/architecture.md) · [Quick start](#quick-start) ·
 [Connect your account](docs/account-connection.md) · [Evaluation](docs/evaluation.md)
 
+### Default knowledge library
+
+The installation includes 15 value-investing concepts and five research workflows,
+plus a linked entry index. They cover business quality, cash flow, valuation, bear
+cases and portfolio fit. These original English paraphrases retain source reading
+pointers and exclude private investment rules and records. Start with the
+[framework index](examples/knowledge/investment-framework.md); see the
+[source policy and limits](docs/knowledge.md). New workspaces receive the full pack.
+
+
 ## A fictional example: attractive valuation, constrained portfolio
 
 The demo assumes a price of **80** and an intrinsic value of **120**, giving a
@@ -100,7 +110,7 @@ Look at:
 ```text
 demo-output/
 ├── watchlist.json, policy.json, portfolio.json, earnings.json
-├── knowledge/                 # new, synthetic teaching notes
+├── knowledge/                 # curated concepts and research workflows
 ├── runs/<id>/
 │   ├── context.md, task.json  # selected inputs and their hashes
 │   ├── proposal.json          # fixture or host-produced response
