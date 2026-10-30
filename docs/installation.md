@@ -11,8 +11,8 @@ For development: `python -m pip install -e .` and
 
 Initialize a **new empty** private workspace with `argo init /path/to/workspace`.
 Do not point init at an existing Obsidian vault. The initializer never overwrites
-an existing nonempty directory. Knowledge examples are original synthetic teaching
-notes; import your own selected material separately.
+an existing nonempty directory. The default knowledge pack contains curated, source-oriented concepts and workflows;
+company and portfolio inputs are synthetic. Import your own selected material separately.
 
 ## Optional local host plugin
 

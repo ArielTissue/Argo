@@ -11,8 +11,8 @@ to reassess?**
 
 The same earnings report can lead to different suggestions for different portfolios.
 
-> **Research and learning software, not investment advice. All bundled demo companies,
-> portfolios and policies are fictional.**
+> **Research and learning software, not investment advice. The offline replay is fictional.
+> The historical Costco example uses public financial data with separately labeled assumptions.**
 
 [中文说明](README.zh-CN.md) · [Architecture](docs/architecture.md) · [Quick start](#quick-start) ·
 [Connect your account](docs/account-connection.md) · [Evaluation](docs/evaluation.md)
@@ -27,24 +27,30 @@ pointers and exclude private investment rules and records. Start with the
 [source policy and limits](docs/knowledge.md). New workspaces receive the full pack.
 
 
-## A fictional example: attractive valuation, constrained portfolio
+## Earnings analysis in practice: Costco FY2025
 
-The demo assumes a price of **80** and an intrinsic value of **120**, giving a
-**33.3% margin of safety**. The portfolio context changes the action suggestion:
+Costco sells merchandise through a membership warehouse model. The example asks
+whether stronger reported results translate into better cash economics, then tests
+valuation assumptions and portfolio fit.
 
-| Check | Demo result | Configured policy | Rule |
-|---|---|---|---|
-| Margin of safety | 33.3% | At least 20% — passes | `P-MARGIN` |
-| AURX position | 21.1% | At most 15% — over limit | `P-SINGLE-STOCK` |
-| Technology exposure | 40.0% | At most 35% — over limit | `P-THEME` |
-| Technology additions | Frozen | No additions to this theme | `P-FROZEN` |
+| Research question | Example finding |
+|---|---|
+| What changed? | Annual revenue rose 8.17%; operating margin moved from 3.65% to 3.77%. |
+| Did cash economics improve? | FCF rose from USD6,629m to USD7,837m; FCF less SBC from USD5,811m to USD6,977m. |
+| Is the moat established? | Test member retention and scale economics; fee growth alone is insufficient. |
+| Is it worth the price? | Two explicit cash-flow sensitivities use a fictional USD800 price; neither establishes a purchase case. |
+| Does it fit the user? | A separately fictional 18% issuer weight exceeds an example 15% cap. |
 
-> **WAIT** — The assumed valuation clears the margin threshold, but portfolio
-> limits and the theme freeze block an addition. Review the assumptions and resolve
-> the constraints before reassessing.
+Read the **[worked historical report](docs/examples/costco-fy2025-analysis.md)** for
+sources, calculations, scenarios, bear case and next questions. Financial facts are
+from Costco's [FY2025 disclosure](https://investor.costco.com/news/news-details/2025/Costco-Wholesale-Corporation-Reports-Fourth-Quarter-and-Fiscal-Year-2025-Operating-Results/default.aspx); price, forward assumptions and portfolio
+are explicitly illustrative. This is a dated research example, not current advice.
 
-This is a synthetic fixture replay of the actual harness, not a live LLM result or
-an estimate of investment performance. Intrinsic value remains an assumption.
+**Try it:** [use your own host for company research](docs/research-walkthrough.md),
+or run `argo demo --output ./demo-output` to reproduce the separate
+[fictional earnings report](docs/examples/aurx-earnings-report.md) through the harness.
+The offline command replays a fixed response; it does not perform live reasoning.
+Broker access is optional for company research.
 
 ![Argo framework](docs/assets/framework.svg)
 

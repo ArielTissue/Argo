@@ -2,13 +2,87 @@
   "run_id": "replace-with-prepared-run-id",
   "symbol": "AURX",
   "event_id": "AURX-FY2026-Q3",
-  "evidence": [{"id": "S1", "url": "https://example.org/aurx/q3", "kind": "official_ir", "published_at": "2026-10-29T08:00:00Z", "accessed_at": "2026-10-29T11:30:00Z", "excerpt": "Synthetic fixture: revenue grew 8%; operating cash flow was 120 units. This is not an actual company disclosure."}],
-  "claims": [{"text": "The fictional company's revenue grew 8% in the sample quarter.", "evidence_ids": ["S1"]}],
+  "evidence": [
+    {
+      "id": "S1",
+      "url": "https://example.org/aurx/q3",
+      "kind": "official_ir",
+      "published_at": "2026-10-29T08:00:00Z",
+      "accessed_at": "2026-10-29T11:30:00Z",
+      "excerpt": "SYNTHETIC DISCLOSURE, USD millions: Q3 revenue 540 versus prior-year Q3 500 and previous quarter 520; operating income 108 versus prior-year 90. Renewal rate 92% versus 93% a year earlier. These figures describe a fictional company, not an actual disclosure."
+    },
+    {
+      "id": "S2",
+      "url": "https://example.org/aurx/q3/cash-flow",
+      "kind": "official_filing",
+      "published_at": "2026-10-29T08:00:00Z",
+      "accessed_at": "2026-10-29T11:30:00Z",
+      "excerpt": "SYNTHETIC DISCLOSURE, USD millions, standalone Q3: operating cash flow 120, capital expenditure 40, SBC 25; prior-year Q3 operating cash flow 110, capex 30, SBC 20. Closing cash 600; debt 200. Hypothetical diluted shares 100 million. All values are fictional."
+    }
+  ],
+  "claims": [
+    {
+      "text": "Revenue rose 8.0% year over year (540/500−1) and 3.85% sequentially (540/520−1). No analyst-consensus data is supplied, so no beat/miss claim is made.",
+      "evidence_ids": [
+        "S1"
+      ]
+    },
+    {
+      "text": "Operating margin increased from 18.0% to 20.0% (90/500 versus 108/540); renewal rate slipped from 93% to 92%, so margin improvement alone does not establish a stronger moat.",
+      "evidence_ids": [
+        "S1"
+      ]
+    },
+    {
+      "text": "Quarterly conventional FCF was 80 million (120−40), unchanged from 80 million a year earlier (110−30). FCF less SBC fell from 60 to 55 million; adjusted cash-flow margin declined from 12.0% to 10.19%.",
+      "evidence_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "Cash less debt is 400 million, but restricted cash, maturity terms and other senior claims are not disclosed in this fixture; this is not proof of adequate liquidity.",
+      "evidence_ids": [
+        "S2"
+      ]
+    }
+  ],
   "analysis": {
-    "business_quality": "Apply [[cash-flow-quality]] to investigate whether cash conversion supports the revenue trend. This fixture does not establish a durable competitive advantage.",
-    "bear_case": "The illustrative valuation may overestimate sustainable cash generation; a weaker renewal cycle would undermine the scenario."
+    "business_quality": "### Business and operating performance\nAURX is a fictional recurring-service provider. Revenue and operating margin improved, but cash economics did not improve at the same pace. The sample contains one comparable prior-year quarter and the previous revenue quarter, not a full operating history. Revenue mix, customer concentration and consensus estimates are missing.\n\n### Cash-flow quality\nApply [[free-cash-flow]] and [[sbc-adjusted-cash-flow]]: conventional FCF is flat while SBC-adjusted cash flow falls 8.33% (55/60−1). Capex and compensation absorb the operating cash increase. This adjustment is a nonstandard sensitivity; do not count the same compensation cost again through dilution. Working-capital details and maintenance/growth capex splits are unavailable.\n\n### Competitive advantage\nApply [[moat]]: recurring revenue could imply switching costs, but the one-point renewal decline weakens that interpretation. Seek cohort retention, contract duration, pricing and customer migration evidence. Improved margins alone do not prove durable excess returns. ROIC and its capital-cost comparison cannot be calculated from these inputs.\n\n### Interpretation\nThe quarter supports a growing business, but not an unqualified improvement in owner economics. Keep cash conversion and renewal durability as the next research questions rather than treating revenue growth as a buy signal.",
+    "bear_case": "Apply [[bear-case]] and [[value-traps]]: suppose renewal weakness persists while capex remains elevated. Revenue can keep rising while cash available per share disappoints. The base valuation then overstates durability. Test future cohort retention, SBC/share-count changes and cash conversion; do not pretend a single quarter establishes a trend. Missing debt terms and working-capital detail remain open risks."
   },
-  "valuation": {"price": 80, "intrinsic_value": 120, "currency": "USD", "price_as_of": "2026-10-29T11:45:00Z", "assumptions": ["120 is a fictional scenario input, not a market fact or a validated fair value.", "Apply [[margin-of-safety]] only after independently reviewing growth and discount-rate assumptions."]},
-  "decision": {"stance": "wait", "position_purpose": "long_term", "rationale": "The valuation scenario clears the illustrative margin threshold, but the portfolio exceeds its stock/theme limits and technology additions are frozen.", "policy_refs": ["P-SINGLE-STOCK", "P-THEME", "P-FROZEN", "P-MARGIN"], "exit_conditions": ["Reassess if the cash-generation thesis deteriorates.", "Revisit a potential addition only after portfolio constraints are resolved and current sources are checked."]},
-  "limitations": ["All companies, amounts, sources and policy thresholds in this replay are synthetic.", "Source URLs are example.org placeholders; no live research, broker access or LLM call occurs.", "The validator checks references and arithmetic, not the truth of the excerpt or valuation assumptions."]
+  "valuation": {
+    "price": 80,
+    "intrinsic_value": 120,
+    "currency": "USD",
+    "price_as_of": "2026-10-29T11:45:00Z",
+    "assumptions": [
+      "All valuation inputs below are deliberately hypothetical, not forecasts extracted from the synthetic quarter. Use [[price-and-value]] and [[margin-of-safety]]; the CLI verifies only the supplied point-value margin.",
+      "Illustrative equity cash-flow model: 10 annual cash flows, year-one annual cash flow per share C1, constant growth g, equity discount rate r, terminal growth t; V = sum(C1*(1+g)^(n-1)/(1+r)^n, n=1..10) + C1*(1+g)^9*(1+t)/(r-t)/(1+r)^10. No extra net-cash adjustment is added.",
+      "Downside: C1=4, g=5%, r=12%, t=2% gives V=47.55 and margin −68.23% at price 80. Base: C1=6, g=8%, r=10%, t=3% gives V=118.33 and margin 32.39%. Upside: C1=7, g=10%, r=9%, t=3% gives V=186.63 and margin 57.13%. All cash flows are USD per share.",
+      "The structured point value is rounded to the nearest ten (120), giving 33.33%. These annual cash-flow assumptions greatly exceed simple annualization of the sample quarterly adjusted FCF (55 million / 100 million shares = 0.55 per share); this deliberate gap makes the valuation unsupported by the supplied operating evidence. Do not treat the base case as a validated fair value.",
+      "No probability weights or expected return are claimed. The downside does not protect the price, and the single-quarter evidence cannot establish the optimistic cash-flow trajectory."
+    ]
+  },
+  "decision": {
+    "stance": "wait",
+    "position_purpose": "long_term",
+    "rationale": "Wait: revenue and margins improved, but adjusted cash generation weakened and the valuation requires unsupported cash-flow assumptions. Independently, the fictional stock/theme exposures exceed configured limits and technology additions are frozen. A standalone valuation threshold does not settle either business quality or portfolio suitability.",
+    "policy_refs": [
+      "P-SINGLE-STOCK",
+      "P-THEME",
+      "P-FROZEN",
+      "P-MARGIN"
+    ],
+    "exit_conditions": [
+      "Reassess the thesis if dated disclosures show sustained renewal deterioration or cash conversion fails to support the assumed trajectory.",
+      "Before reconsidering an addition, obtain working-capital, debt and share-count evidence, rebuild the valuation with justified assumptions, and resolve portfolio constraints.",
+      "The user decides separately whether to invest; report archival does not authorize or execute a transaction."
+    ]
+  },
+  "limitations": [
+    "All companies, amounts, sources and policy thresholds in this replay are synthetic.",
+    "Source URLs are example.org placeholders; no live research, broker access or LLM call occurs.",
+    "The validator checks references and arithmetic, not the truth of the excerpt or valuation assumptions."
+  ]
 }
