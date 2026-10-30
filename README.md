@@ -33,13 +33,23 @@ Costco sells merchandise through a membership warehouse model. The example asks
 whether stronger reported results translate into better cash economics, then tests
 valuation assumptions and portfolio fit.
 
-| Research question | Example finding |
-|---|---|
-| What changed? | Annual revenue rose 8.17%; operating margin moved from 3.65% to 3.77%. |
-| Did cash economics improve? | FCF rose from USD6,629m to USD7,837m; FCF less SBC from USD5,811m to USD6,977m. |
-| Is the moat established? | Test member retention and scale economics; fee growth alone is insufficient. |
-| Is it worth the price? | Illustrative values of USD241.05–372.80 are below the fictional USD800 price: wait, subject to unvalidated model assumptions. |
-| Does it fit the user? | A separately fictional 18% issuer weight exceeds an example 15% cap. |
+> **Business improved; repeatable cash growth needs a closer look.** FY2025 revenue
+> rose 8.17% and operating margin expanded from 3.65% to 3.77%. But membership-fee
+> growth combines pricing and member activity, so it does not independently prove
+> stronger loyalty. The report tests the proposed moat against renewal and cohort evidence.
+>
+> **The cash bridge changes the interpretation.** FCF less SBC increased from
+> USD5,811m to USD6,977m (+20.07%). Yet about 57.8% of the operating-cash increase
+> comes from a larger working-capital contribution. Removing that contribution as
+> a diagnostic leaves USD5,200m versus USD5,213m—almost flat. This is a stress test,
+> not a claim that all working-capital benefits are temporary. It is a reason to
+> investigate before extrapolating the headline growth.
+>
+> **Company quality, valuation and portfolio fit remain separate decisions.**
+> Illustrative values of USD241.05–372.80 do not support the fictional USD800 price;
+> a lower starting-cash stress test produces USD180.79. A separately fictional
+> 18% holding also exceeds its 15% cap. The example concludes **wait**, with specific
+> follow-up questions rather than a claim that fair value is precisely known.
 
 Read the **[worked historical report](docs/examples/costco-fy2025-analysis.md)** for
 sources, calculations, scenarios, bear case and next questions. Financial facts are

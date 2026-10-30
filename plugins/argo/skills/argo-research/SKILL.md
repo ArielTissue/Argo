@@ -50,6 +50,10 @@ State a bear case and conditions that would change the conclusion. A lower price
 alone is not proof of a margin of safety. Keep knowledge maintenance separate from
 this research task.
 
+For earnings analysis, follow the [report writing guide](references/earnings-report.md).
+Do not stop at a metric summary: explain operating drivers, cash quality, thesis
+changes and unresolved signals.
+
 Fill the generated `runs/ID/proposal-template.json` into a separate proposal file.
 Keep run_id, symbol and event_id equal to the prepared values. Each claim needs existing evidence IDs. Use exact
 policy IDs, valid selected-knowledge links, explicit valuation assumptions, position
