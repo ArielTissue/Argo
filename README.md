@@ -38,7 +38,7 @@ valuation assumptions and portfolio fit.
 | What changed? | Annual revenue rose 8.17%; operating margin moved from 3.65% to 3.77%. |
 | Did cash economics improve? | FCF rose from USD6,629m to USD7,837m; FCF less SBC from USD5,811m to USD6,977m. |
 | Is the moat established? | Test member retention and scale economics; fee growth alone is insufficient. |
-| Is it worth the price? | Two explicit cash-flow sensitivities use a fictional USD800 price; neither establishes a purchase case. |
+| Is it worth the price? | Illustrative values of USD241.05–372.80 are below the fictional USD800 price: wait, subject to unvalidated model assumptions. |
 | Does it fit the user? | A separately fictional 18% issuer weight exceeds an example 15% cap. |
 
 Read the **[worked historical report](docs/examples/costco-fy2025-analysis.md)** for
